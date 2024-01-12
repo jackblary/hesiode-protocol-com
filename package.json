@@ -1,0 +1,53 @@
+{
+  "name": "hesiode-protocole",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha",
+    "deploy-local": "node scripts/deployAllContracts.js",
+    "deploy-mumbai": "npx hardhat run scripts/deployAllContracts.js --network mumbai",
+    "deploy-polygon": "npx hardhat run scripts/deployAllContracts.js --network polygon",
+    "init-vi": "npx hardhat run scripts/initValueInterpreter.js",
+    "init-vi-mumbai": "npx hardhat run scripts/initValueInterpreter.js --network mumbai",
+    "init-vi-polygon": "npx hardhat run scripts/initValueInterpreter.js --network polygon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/hesiode/hesiode-protocole.git"
+  },
+  "author": "Hesiode",
+  "bugs": {
+    "url": "https://gitlab.com/hesiode/hesiode-protocole/issues"
+  },
+  "homepage": "https://gitlab.com/hesiode/hesiode-protocole#readme",
+  "description": "",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.1.0",
+    "mathjs": "^11.4.0",
+    "node-fetch": "^3.3.0",
+    "solidity-docgen": "^0.6.0-beta.32"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^6.1.6",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.10",
+    "hardhat": "^2.12.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
+  }
+}
